@@ -21,6 +21,24 @@
 
     p { margin: 0 0 12px; }
 
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #ddd;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     nav {
       display: flex;
       gap: 20px;
@@ -35,7 +53,16 @@
     .subtitle {
       font-style: italic;
       color: #666;
-      margin-bottom: 32px;
+      margin-bottom: 8px;
+    }
+
+    .contact-links {
+      font-family: sans-serif;
+      font-size: 0.95rem;
+    }
+
+    .contact-links a {
+      color: #333;
     }
 
     footer {
@@ -50,13 +77,24 @@
 </head>
 <body>
 
-  <h1>Carter</h1>
-  <p class="subtitle">Computer Programming Student</p>
+  <div class="profile">
+    <div class="profile-pic">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="8" fill="#aaa"/>
+        <path d="M4 38c0-8.837 7.163-16 16-16s16 7.163 16 16" fill="#aaa"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Carter</h1>
+      <p class="subtitle">Computer Programming Student</p>
+    </div>
+  </div>
 
   <nav>
     <a href="#strengths">Strengths</a>
     <a href="#projects">Projects</a>
     <a href="#growth">Growth</a>
+    <a href="#contact">Contact</a>
   </nav>
 
   <section id="strengths">
@@ -87,6 +125,14 @@
     <h2>Personal and Professional Growth</h2>
     <p>Through my academic and technical projects, I have continued to grow both personally and professionally by strengthening my skills in problem-solving, system design, API development, and software engineering practices. Each experience has helped me become more adaptable, analytical, and collaborative, while reinforcing the value of curiosity, continuous learning, and open communication.</p>
     <p>I aim to keep building on this foundation by exploring new technologies, refining my technical abilities, and continuing to grow as both a developer and a team-oriented problem solver.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
   </section>
 
   <footer>Carter &mdash; Computer Programming Portfolio</footer>
